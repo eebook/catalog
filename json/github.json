@@ -1,0 +1,14 @@
+{
+    "name": "github",
+    "git_url": "https://github.com/eebook/github2e",
+    "info": "Convert github issue to ebook",
+    "schema": {
+        "properties": {
+            "token": {
+                "type": "string",
+                "description": "github token"
+            }
+        },
+        "required": ["token"]
+    }
+}
