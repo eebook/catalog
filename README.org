@@ -1,0 +1,14 @@
+* Catalog for eebook
+** Tips
+
+*** Use =\\= instead of =\= in json file
+https://stackoverflow.com/questions/22497852/how-to-handle-regex-string-in-json-file-with-python
+
+** TODO
+
+*** Tests
+**** make sure json format
+
+**** check regex
+
+*** githook

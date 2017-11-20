@@ -1,0 +1,8 @@
+{
+    "name": "rss",
+    "repo": "http://github.com/eebook/rsseebook",
+    "info": "Convert rss to ebook",
+    "regex": "atom",
+    "schema": {
+    }
+}

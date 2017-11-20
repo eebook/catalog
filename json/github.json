@@ -1,7 +1,8 @@
 {
     "name": "github",
-    "git_url": "https://github.com/eebook/github2e",
+    "repo": "https://github.com/eebook/githubeebook",
     "info": "Convert github issue to ebook",
+    "regex": "(?<=github\\.com/)",
     "schema": {
         "properties": {
             "token": {
