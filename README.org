@@ -4,11 +4,18 @@
 *** Use =\\= instead of =\= in json file
 https://stackoverflow.com/questions/22497852/how-to-handle-regex-string-in-json-file-with-python
 
+*** Run tests
+
+Build image
+#+BEGIN_SRC 
+docker-compose build catalog
+#+END_SRC
+
+Run tests
+#+BEGIN_SRC 
+docker-compose up
+#+END_SRC
+
 ** TODO
-
-*** Tests
-**** make sure json format
-
-**** check regex
 
 *** githook

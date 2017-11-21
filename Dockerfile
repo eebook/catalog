@@ -10,4 +10,4 @@ RUN pip3 install -U pip \
 COPY . /src/
 WORKDIR /src
 
-CMD ["/src/test.sh"]
+CMD ["make", "test"]
