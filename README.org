@@ -1,3 +1,5 @@
+[[https://circleci.com/gh/eebook/catalog][file:https://circleci.com/gh/eebook/catalog/tree/develop.svg?style=shield&circle-token=24b9fd10fdf828e456e4fd52899246b1b8ae80f9]]
+
 * Catalog for eebook
 ** Tips
 
