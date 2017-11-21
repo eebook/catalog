@@ -1,0 +1,29 @@
+{
+    "title": "catalog",
+    "description": "Metadata schema for eebook catalog",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": [
+        "name",
+        "repo",
+        "info",
+        "regex"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "repo": {
+            "type": "string"
+        },
+        "info": {
+            "type": "string"
+        },
+        "regex": {
+            "type": "string"
+        },
+        "schema": {
+            "type": "object"
+        }
+    }
+}

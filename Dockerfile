@@ -9,3 +9,5 @@ RUN pip3 install -U pip \
     && pip install -i https://pypi.douban.com/simple -r requirements.txt
 COPY . /src/
 WORKDIR /src
+
+CMD ["/src/test.sh"]

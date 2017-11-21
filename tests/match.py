@@ -2,32 +2,39 @@
 # -*- coding: utf-8 -*-
 
 import re
-import logging
+import json
+import os
 
-LOGGER = logging.getLogger(__name__)
+def _get_json_content(path):
+    """
+    Read a json file and return its content(Python object)
+    :param path: json file path
+    """
+    with open(path, 'r') as f:
+        return json.load(f)
 
 
-# For debug
-SITE_REGEX_DICT = {
-    'github': '(?<=github\.com/)',
-    'rss': [
-        'atom'
-    ],
-    'talkpython': '(?<=talkpython\.fm/episodes/)(?P<subject_id>[^/\n\r]*)(/)',
-    'zhihu': [
-        '(?<=zhihu\.com/)people/(?P<author_id>[^/\n\r]*)'
-    ]
-}
+def _get_metadata_from_repo():
+    result = list()
+    for _, _, files in os.walk('/src/json', followlinks=False):
+        file_path_list = ['/src/json/'+item for item in files]
+        print('Supported website: {}\n'.format(files))
+    for item in file_path_list:
+        result_item = _get_json_content(item)
+        result.append(result_item)
+    return result
 
-def _get_regex_dict():
-    site_regex_dict = {item.name: item.regex for item in metadata_list}
+
+def get_regex_dict():
+    metadata_list = _get_metadata_from_repo()
+    site_regex_dict = {item['name']: item['regex'] for item in metadata_list}
     return site_regex_dict
 
 
-def get_website_type(url):
-    # TODO: add cache
-    site_regex_dict = _get_regex_dict()
-    for k, v in site_regex_dict.items():
+def get_website_type(url, _site_regex=None):
+    if _site_regex is None:
+        _site_regex = get_regex_dict()
+    for k, v in _site_regex.items():
         if isinstance(v, str):
             search_result = re.search(v, url)
             if search_result is not None:
@@ -41,11 +48,13 @@ def get_website_type(url):
 
 
 if __name__ == "__main__":
-    website_type1 = get_website_type('https://talkpython.fm/episodes/asdf/')
+    site_regex = get_regex_dict()
+
+    website_type1 = get_website_type('https://talkpython.fm/episodes/asdf/', site_regex)
     print('website type: {}'.format(website_type1))
 
-    website_type2 = get_website_type('https://zhihu.com/people/knarfeh')
+    website_type2 = get_website_type('https://zhihu.com/people/knarfeh', site_regex)
     print('website type: {}'.format(website_type2))
 
-    test_github = get_website_type('https://github.com/travisjeffery/jocko/issues')
+    test_github = get_website_type('https://github.com/travisjeffery/jocko/issues', site_regex)
     print('test_github: {}'.format(test_github))
