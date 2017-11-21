@@ -1,0 +1,11 @@
+version: '2'
+services:
+  catalog:
+    image: $CATALOG_IMAGE
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    # entrypoint: [sh]
+    volumes:
+      - .:/src
+    tty: true

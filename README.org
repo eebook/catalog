@@ -1,14 +1,24 @@
+[[https://circleci.com/gh/eebook/catalog][file:https://circleci.com/gh/eebook/catalog/tree/develop.svg?style=shield&circle-token=24b9fd10fdf828e456e4fd52899246b1b8ae80f9]]
+[[https://travis-ci.org/eebook/catalog][file:https://travis-ci.org/eebook/catalog.svg?branch=develop]]
+
 * Catalog for eebook
 ** Tips
 
 *** Use =\\= instead of =\= in json file
 https://stackoverflow.com/questions/22497852/how-to-handle-regex-string-in-json-file-with-python
 
+*** Run tests
+
+Build image
+#+BEGIN_SRC 
+docker-compose build catalog
+#+END_SRC
+
+Run tests
+#+BEGIN_SRC 
+docker-compose up
+#+END_SRC
+
 ** TODO
-
-*** Tests
-**** make sure json format
-
-**** check regex
 
 *** githook

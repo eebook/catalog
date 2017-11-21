@@ -1,0 +1,16 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    - docker info
+    - if [[ -e ~/docker/image.tar ]]; then docker load --input ~/docker/image.tar; fi
+    - docker build -t eebook/catalog .
+    - mkdir -p ~/docker; docker save eebook/catalog > ~/docker/image.tar
+
+test:
+  override:
+    - docker run eebook/catalog
