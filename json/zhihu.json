@@ -2,5 +2,7 @@
     "name": "zhihu",
     "repo": "https://github.com/eebook/zhihueebook",
     "info": "Convert zhihu to ebook",
-    "regex": "(?<=zhihu\\.com/)people/(?P<author_id>[^/\\n\\r]*)"
+    "regex": "(?<=zhihu\\.com/)people/(?P<author_id>[^/\\n\\r]*)",
+    "image": "knarfeh/zhihueebook",
+    "image_version": "latest"
 }

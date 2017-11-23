@@ -3,18 +3,23 @@
     "repo": "https://github.com/eebook/githubeebook",
     "info": "Convert github issue to ebook",
     "regex": "(?<=github\\.com/)",
+    "image": "knarfeh/githubissueseebook",
+    "image_version": "latest",
     "schema": {
         "properties": {
             "token": {
                 "type": "string",
+                "title": "Github token",
                 "description": "github token"
             },
             "test1": {
                 "type": "string",
+                "title": "Github test1",
                 "description": "test1"
             },
             "test2": {
                 "type": "string",
+                "title": "Github test2",
                 "description": "test1"
             }
         },
