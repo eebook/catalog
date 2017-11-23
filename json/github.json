@@ -8,8 +8,16 @@
             "token": {
                 "type": "string",
                 "description": "github token"
+            },
+            "test1": {
+                "type": "string",
+                "description": "test1"
+            },
+            "test2": {
+                "type": "string",
+                "description": "test1"
             }
         },
-        "required": ["token"]
+        "required": ["token", "test1", "test2"]
     }
 }
