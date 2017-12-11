@@ -7,7 +7,9 @@
         "name",
         "repo",
         "info",
-        "regex"
+        "regex",
+        "image",
+        "image_version"
     ],
     "properties": {
         "name": {
@@ -20,6 +22,12 @@
             "type": "string"
         },
         "regex": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string"
+        },
+        "image_version": {
             "type": "string"
         },
         "schema": {

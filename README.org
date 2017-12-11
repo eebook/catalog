@@ -1,7 +1,6 @@
+* Catalog for eebook
 [[https://circleci.com/gh/eebook/catalog][file:https://circleci.com/gh/eebook/catalog/tree/develop.svg?style=shield&circle-token=24b9fd10fdf828e456e4fd52899246b1b8ae80f9]]
 [[https://travis-ci.org/eebook/catalog][file:https://travis-ci.org/eebook/catalog.svg?branch=develop]]
-
-* Catalog for eebook
 ** Tips
 
 *** Use =\\= instead of =\= in json file

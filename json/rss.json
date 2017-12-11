@@ -1,6 +1,11 @@
 {
     "name": "rss",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
     "repo": "http://github.com/eebook/rsseebook",
+    "repo_type": "github",
     "info": "Convert rss to ebook",
-    "regex": "atom"
+    "regex": "testsss",
+    "image": "knarfeh/rsseebook",
+    "image_version": "latest"
 }
