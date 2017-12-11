@@ -8,5 +8,13 @@ services:
 before_install:
   - docker build -t eebook/catalog .
 
+env:
+  global:
+  - ENCRYPTION_LABEL: 7c6fd70a6f92
+  - COMMIT_AUTHOR_EMAIL: "zhihu2ebook@hotmail.com"
+
 script:
-  - docker run eebook/catalog
+  - docker run -v $(pwd):/src eebook/catalog make test
+  - bash ./deploy_travis.sh
+
+

@@ -5,7 +5,7 @@
     "repo": "http://github.com/eebook/rsseebook",
     "repo_type": "github",
     "info": "Convert rss to ebook",
-    "regex": "atom",
+    "regex": "testsss",
     "image": "knarfeh/rsseebook",
     "image_version": "latest"
 }

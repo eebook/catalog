@@ -15,7 +15,7 @@ if __name__ == "__main__":
     print("\nBuilding index.html...\n")
     metadata_list = get_metadata_from_repo()
 
-    loader = jinja2.FileSystemLoader('./dist/index.jinja2.html')
+    loader = jinja2.FileSystemLoader('./index.jinja2.html')
     env = jinja2.Environment(loader=loader)
     template = env.get_template(name='')
     index_content = template.render(metadata_list=metadata_list)
