@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    # entrypoint: [sh]
+    entrypoint: [sh]
     volumes:
       - .:/src
     tty: true

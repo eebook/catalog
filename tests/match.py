@@ -14,7 +14,7 @@ def _get_json_content(path):
         return json.load(f)
 
 
-def _get_metadata_from_repo():
+def get_metadata_from_repo():
     result = list()
     for _, _, files in os.walk('/src/json', followlinks=False):
         file_path_list = ['/src/json/'+item for item in files]
@@ -26,7 +26,7 @@ def _get_metadata_from_repo():
 
 
 def get_regex_dict():
-    metadata_list = _get_metadata_from_repo()
+    metadata_list = get_metadata_from_repo()
     site_regex_dict = {item['name']: item['regex'] for item in metadata_list}
     return site_regex_dict
 
