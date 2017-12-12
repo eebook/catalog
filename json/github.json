@@ -10,22 +10,17 @@
     "image_version": "latest",
     "schema": {
         "properties": {
-            "token": {
+            "GITHUB_TOKEN": {
                 "type": "string",
                 "title": "Github token",
                 "description": "github token"
             },
-            "test1": {
+            "QUERY_STRING": {
                 "type": "string",
-                "title": "Github test1",
-                "description": "test1"
-            },
-            "test2": {
-                "type": "string",
-                "title": "Github test2",
-                "description": "test1"
+                "title": "query string",
+                "description": "query string, like state=open"
             }
         },
-        "required": ["token", "test1", "test2"]
+        "required": ["GITHUB_TOKEN", "QUERY_STRING" ]
     }
 }
