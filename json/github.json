@@ -18,7 +18,15 @@
             "QUERY_STRING": {
                 "type": "string",
                 "title": "query string",
+                "default": "state=all",
                 "description": "query string, like state=open"
+            },
+            "CONTENT_IS_MARKDOWN": {
+                "description": "content is markdown",
+                "title": "Content is Markdown",
+                "type": "boolean",
+                "default": true,
+                "readOnly": true
             }
         },
         "required": ["GITHUB_TOKEN", "QUERY_STRING" ]
