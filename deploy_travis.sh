@@ -43,7 +43,7 @@ ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
 openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ./catalog.enc -out ./catalog -d
 chmod 600 ./catalog
 eval `ssh-agent -s`
-ssh-add zhihu2ebook
+ssh-add catalog
 
 # Now that we're all set up, we can push.
 # git push $SSH_REPO $TARGET_BRANCH
