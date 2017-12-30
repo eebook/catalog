@@ -1,0 +1,11 @@
+{
+    "name": "aaronsw",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/knarfeh/aaronsweebook",
+    "repo_type": "github",
+    "info": "Make Aaron Swartz's article an ebook",
+    "regex": "(?<=aaronsw\\.com/weblog/fullarchive)",
+    "image": "knarfeh/aaronsweebook",
+    "image_version": "latest"
+}

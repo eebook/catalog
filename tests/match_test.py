@@ -18,14 +18,40 @@ class TestMetadata(unittest.TestCase):
     def tearDown(self):
         pass
 
+    # githubissues
     def test_github_issues(self):
         result = get_website_type('https://github.com/travisjeffery/jocko/issues', self.site_regex)
         self.assertEqual(result, 'github')
 
+    # zhihu
     def test_zhihu_people(self):
         result = get_website_type('https://zhihu.com/people/knarfeh', self.site_regex)
         self.assertEqual(result, 'zhihu')
 
+    # aaronsweebook
+    def test_aaronsw_1(self):
+        result = get_website_type('http://www.aaronsw.com/weblog/fullarchive/', self.site_regex)
+        self.assertEqual(result, 'aaronsw')
+
+    def test_aaronsw_2(self):
+        result = get_website_type('aaronsw.com/weblog/fullarchive', self.site_regex)
+        self.assertEqual(result, 'aaronsw')
+
+    # ruanyifeng
+    def test_ruanyifeng_1(self):
+        result = get_website_type('http://www.ruanyifeng.com/blog/computer/', self.site_regex)
+        self.assertEqual(result, 'ruanyifeng')
+    
+    def test_ruanyifeng_2(self):
+        result = get_website_type('www.ruanyifeng.com/blog/computer/', self.site_regex)
+        self.assertEqual(result, 'ruanyifeng')
+
+    # rss
+    def test_rss_1(self):
+        result = get_website_type('http://www.ruanyifeng.com/feed.html', self.site_regex)
+        self.assertEqual(result, 'rss')
+
+    # unknown
 
 if __name__ == '__main__':
     unittest.main()

@@ -90,7 +90,6 @@ textarea {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-
   *text-indent: -9999px;
 }
 .ir:before {
@@ -153,10 +152,8 @@ textarea {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -309,4 +306,7 @@ body .description {
   position: absolute;
   text-align: center;
   width: 200px;
+}
+.footer .copyright a {
+  color: #fff;
 }

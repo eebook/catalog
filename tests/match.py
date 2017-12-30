@@ -50,11 +50,17 @@ def get_website_type(url, _site_regex=None):
 if __name__ == "__main__":
     site_regex = get_regex_dict()
 
-    website_type1 = get_website_type('https://talkpython.fm/episodes/asdf/', site_regex)
-    print('website type: {}'.format(website_type1))
+    website_type = get_website_type('https://talkpython.fm/episodes/asdf/', site_regex)
+    print('website type: {}'.format(website_type))
 
-    website_type2 = get_website_type('https://zhihu.com/people/knarfeh', site_regex)
-    print('website type: {}'.format(website_type2))
+    website_type = get_website_type('https://zhihu.com/people/knarfeh', site_regex)
+    print('website type: {}'.format(website_type))
 
-    test_github = get_website_type('https://github.com/travisjeffery/jocko/issues', site_regex)
-    print('test_github: {}'.format(test_github))
+    website_type = get_website_type('https://github.com/travisjeffery/jocko/issues', site_regex)
+    print('website type: {}'.format(website_type))
+
+    website_type = get_website_type('http://www.aaronsw.com/weblog/fullarchive/', site_regex)
+    print('website type: {}'.format(website_type))
+
+    website_type = get_website_type('http://www.ruanyifeng.com/blog/computer/', site_regex)
+    print('website type: {}'.format(website_type))

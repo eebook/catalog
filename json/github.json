@@ -2,7 +2,7 @@
     "name": "github",
     "author": "knarfeh",
     "author_link": "https://github.com/knarfeh",
-    "repo": "https://github.com/eebook/githubeebook",
+    "repo": "https://github.com/knarfeh/githubissueseebook",
     "repo_type": "github",
     "info": "Convert github issue to ebook",
     "regex": "(?<=github\\.com/)",

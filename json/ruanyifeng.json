@@ -1,0 +1,11 @@
+{
+    "name": "ruanyifeng",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/knarfeh/ruanyifeng",
+    "repo_type": "github",
+    "info": "Make Ruanyifeng's article an ebook",
+    "regex": "(?<=ruanyifeng\\.com/blog)",
+    "image": "knarfeh/ruanyifeng",
+    "image_version": "latest"
+}
