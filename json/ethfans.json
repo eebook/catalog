@@ -1,0 +1,11 @@
+{
+    "name": "ethfans",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/knarfeh/ethfans2ebook",
+    "repo_type": "github",
+    "info": "Make ethfans's posts an ebook",
+    "regex": "(?<=ethfans\\.org)",
+    "image": "knarfeh/ethfans2ebook",
+    "image_version": "latest"
+}

@@ -29,6 +29,6 @@
                 "readOnly": true
             }
         },
-        "required": ["GITHUB_TOKEN", "QUERY_STRING" ]
+        "required": ["GITHUB_TOKEN"]
     }
 }

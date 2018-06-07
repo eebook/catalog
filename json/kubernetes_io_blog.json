@@ -1,0 +1,11 @@
+{
+    "name": "kubernetes_io_blog",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/knarfeh/kubernetes2ebook",
+    "repo_type": "github",
+    "info": "Make kubernetes's blog an ebook",
+    "regex": "(?<=kubernetes\\.io/blog)",
+    "image": "knarfeh/kubernetes2ebook",
+    "image_version": "latest"
+}

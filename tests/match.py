@@ -64,3 +64,12 @@ if __name__ == "__main__":
 
     website_type = get_website_type('http://www.ruanyifeng.com/blog/computer/', site_regex)
     print('website type: {}'.format(website_type))
+
+    website_type = get_website_type('http://kubernetes.io/blog/', site_regex)
+    print('website type: {}'.format(website_type))
+
+    website_type = get_website_type('https://ethfans.org/', site_regex)
+    print('website type: {}'.format(website_type))
+
+    website_type = get_website_type('https://dbarobin.org/archives/', site_regex)
+    print('website type: {}'.format(website_type))

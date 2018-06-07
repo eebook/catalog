@@ -47,4 +47,5 @@ ssh-add catalog
 
 # Now that we're all set up, we can push.
 # git push $SSH_REPO $TARGET_BRANCH
+git push $SSH_REPO --delete gh-pages
 git subtree push --prefix dist $SSH_REPO $TARGET_BRANCH 

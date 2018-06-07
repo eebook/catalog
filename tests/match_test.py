@@ -41,7 +41,7 @@ class TestMetadata(unittest.TestCase):
     def test_ruanyifeng_1(self):
         result = get_website_type('http://www.ruanyifeng.com/blog/computer/', self.site_regex)
         self.assertEqual(result, 'ruanyifeng')
-    
+
     def test_ruanyifeng_2(self):
         result = get_website_type('www.ruanyifeng.com/blog/computer/', self.site_regex)
         self.assertEqual(result, 'ruanyifeng')
@@ -50,6 +50,21 @@ class TestMetadata(unittest.TestCase):
     def test_rss_1(self):
         result = get_website_type('http://www.ruanyifeng.com/feed.html', self.site_regex)
         self.assertEqual(result, 'rss')
+
+    # kubernetes blog
+    def test_kubernetes_blog(self):
+        result = get_website_type('http://kubernetes.io/blog/', self.site_regex)
+        self.assertEqual(result, 'kubernetes_io_blog')
+
+    # ethfans posts
+    def test_ethfans(self):
+        result = get_website_type('http://ethfans.org/', self.site_regex)
+        self.assertEqual(result, 'ethfans')
+
+    # dbarobin
+    def test_dbarobin(self):
+        result = get_website_type('https://dbarobin.org/archives/', self.site_regex)
+        self.assertEqual(result, 'dbarobin')
 
     # unknown
 

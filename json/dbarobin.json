@@ -1,0 +1,11 @@
+{
+    "name": "dbarobin",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/knarfeh/dabrobin2ebook",
+    "repo_type": "github",
+    "info": "Make dbarobin's article an ebook",
+    "regex": "(?<=dbarobin\\.org/archives/)",
+    "image": "knarfeh/dbarobin2ebook",
+    "image_version": "latest"
+}
