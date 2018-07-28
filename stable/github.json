@@ -2,11 +2,11 @@
     "name": "github",
     "author": "knarfeh",
     "author_link": "https://github.com/knarfeh",
-    "repo": "https://github.com/knarfeh/githubissueseebook",
+    "repo": "https://github.com/knarfeh/githubissues2ebook",
     "repo_type": "github",
     "info": "Convert github issue to ebook",
     "regex": "(?<=github\\.com/)",
-    "image": "knarfeh/githubissueseebook",
+    "image": "knarfeh/githubissues2ebook",
     "image_version": "latest",
     "schema": {
         "properties": {

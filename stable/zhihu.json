@@ -1,0 +1,17 @@
+{
+    "name": "zhihu",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/eebook/zhihu2ebook",
+    "repo_type": "github",
+    "info": "Convert zhihu to ebook",
+    "regex": "(?<=zhihu\\.com/)",
+    "image": "knarfeh/zhihu2ebook",
+    "image_version": "latest",
+    "examples": {
+    	"https://todo.com": "description",
+    	"https://todo1.com": "description1",
+    	"https://todo2.com": "description2",
+    	"https://todo3.com": "description3"
+    }
+}
