@@ -16,7 +16,7 @@ def _get_json_content(path):
 def examples2str(examples):
     return '\n'.join("%s--%s" % (k, v) for (k, v) in examples.items())
 
-def get_metadata_from_repo(path='/scr/stable/'):
+def get_metadata_from_repo(path='/src/stable/'):
     result = list()
     for _, _, files in os.walk(path, followlinks=False):
         file_path_list = [path+item for item in files]

@@ -9,9 +9,6 @@
     "image": "knarfeh/zhihu2ebook",
     "image_version": "latest",
     "examples": {
-    	"https://todo.com": "description",
-    	"https://todo1.com": "description1",
-    	"https://todo2.com": "description2",
-    	"https://todo3.com": "description3"
+    	"https://zhuanlan.zhihu.com/newsql": "TiDB 的后花园"
     }
 }

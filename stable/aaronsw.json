@@ -7,5 +7,8 @@
     "info": "Make Aaron Swartz's article an ebook",
     "regex": "(?<=aaronsw\\.com/weblog/fullarchive)",
     "image": "knarfeh/aaronsw2ebook",
-    "image_version": "latest"
+    "image_version": "latest",
+    "examples": {
+    	"http://www.aaronsw.com/weblog/fullarchive": "fullarchive"
+    }
 }
