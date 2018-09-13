@@ -1,0 +1,14 @@
+{
+    "name": "zhihu",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/eebook/zhihu2ebook",
+    "repo_type": "github",
+    "info": "Convert zhihu to ebook",
+    "regex": "(?<=zhihu\\.com/)",
+    "image": "knarfeh/zhihu2ebook",
+    "image_version": "latest",
+    "examples": {
+    	"https://zhuanlan.zhihu.com/newsql": "TiDB 的后花园"
+    }
+}

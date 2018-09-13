@@ -14,7 +14,9 @@
     <link href="css/libs/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/libs/modernizr.js"></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="
+    sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js" crossorigin="anonymous"></script>
     <script>
       // <![CDATA[
         // Google analytics code
@@ -51,7 +53,7 @@
         <tbody>
           {% for item in metadata_list %}
           <tr>
-            <td>
+            <td title="{{item.examples_str}}">
               {{item.name}}
             </td>
             <td>

@@ -19,8 +19,11 @@ class TestJsonschema(unittest.TestCase):
         pass
 
     def test_jsonschema(self):
-        for _, _, files in os.walk('/src/json', followlinks=False):
-            file_path_list = ['/src/json/'+item for item in files]
+        for _, _, files in os.walk('/src/stable', followlinks=False):
+            file_path_list = ['/src/stable/'+item for item in files]
+
+        for _, _, files in os.walk('/src/incubator', followlinks=False):
+            file_path_list.extend(['/src/incubator/'+item for item in files])
 
         for item in file_path_list:
             with open(item, 'r') as f:

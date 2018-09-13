@@ -1,0 +1,14 @@
+{
+    "name": "ruanyifeng",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "https://github.com/knarfeh/ruanyifeng2ebook",
+    "repo_type": "github",
+    "info": "Make Ruanyifeng's article an ebook",
+    "regex": "(?<=ruanyifeng\\.com/blog)",
+    "image": "knarfeh/ruanyifeng2ebook",
+    "image_version": "latest",
+	"examples": {
+    	"http://www.ruanyifeng.com/blog/computer/": "分类： 理解计算机"
+    }
+}

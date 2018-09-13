@@ -7,5 +7,8 @@
     "info": "Make ethfans's posts an ebook",
     "regex": "(?<=ethfans\\.org)",
     "image": "knarfeh/ethfans2ebook",
-    "image_version": "latest"
+    "image_version": "latest",
+    "examples": {
+    	"https://ethfans.org/": ""
+    }
 }

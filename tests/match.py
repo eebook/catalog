@@ -13,20 +13,24 @@ def _get_json_content(path):
     with open(path, 'r') as f:
         return json.load(f)
 
+def examples2str(examples):
+    return '\n'.join("%s--%s" % (k, v) for (k, v) in examples.items())
 
-def get_metadata_from_repo():
+def get_metadata_from_repo(path='/src/stable/'):
     result = list()
-    for _, _, files in os.walk('/src/json', followlinks=False):
-        file_path_list = ['/src/json/'+item for item in files]
-        print('Supported website: {}\n'.format(files))
+    for _, _, files in os.walk(path, followlinks=False):
+        file_path_list = [path+item for item in files]
+        print('Supported website: {}, path: {}\n'.format(files, path))
     for item in file_path_list:
         result_item = _get_json_content(item)
+        result_item["examples_str"] = examples2str(result_item.get("examples", {}))
         result.append(result_item)
     return result
 
 
 def get_regex_dict():
-    metadata_list = get_metadata_from_repo()
+    metadata_list = get_metadata_from_repo(path='/src/stable/')
+    metadata_list.extend(get_metadata_from_repo(path='/src/incubator/'))
     site_regex_dict = {item['name']: item['regex'] for item in metadata_list}
     return site_regex_dict
 

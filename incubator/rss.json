@@ -1,0 +1,17 @@
+{
+    "name": "rss",
+    "author": "knarfeh",
+    "author_link": "https://github.com/knarfeh",
+    "repo": "http://github.com/eebook/rss2ebook",
+    "repo_type": "github",
+    "info": "Convert rss to ebook",
+    "regex": "(?<=feed\\.html)",
+    "image": "knarfeh/rss2ebook",
+    "image_version": "latest",
+    "examples": {
+    	"https://feeds2.feedburner.com/programthink": "",
+        "https://paper.seebug.org/rss/": "",
+        "https://colobu.com/atom.xml": "",
+        "https://wsgzao.github.io/atom.xml": ""
+    }
+}
