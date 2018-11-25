@@ -6,7 +6,7 @@ RUN apk --update add gcc g++ python3-dev musl-dev make curl
 
 COPY requirements.txt /requirements.txt
 RUN pip3 install -U pip \
-    && pip install -i https://pypi.douban.com/simple -r requirements.txt
+    && pip install -r requirements.txt
 COPY . /src/
 WORKDIR /src
 

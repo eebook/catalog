@@ -10,8 +10,8 @@ before_install:
 
 env:
   global:
-  - ENCRYPTION_LABEL: 7c6fd70a6f92
-  - COMMIT_AUTHOR_EMAIL: "zhihu2ebook@hotmail.com"
+  - ENCRYPTION_LABEL: d874329ef0dd
+  - COMMIT_AUTHOR_EMAIL: "hejun1874@gmail.com"
 
 script:
   - docker run -v $(pwd):/src eebook/catalog make test
